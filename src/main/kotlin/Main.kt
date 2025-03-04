@@ -1,3 +1,6 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main(){
+    println("Добро пожаловать в приложение для управления архивами и заметками!")
+    val archives = mutableMapOf<String,MutableList<Note>>()
+    ArchiveSelectionScreen(archives).start()
+    println("Программа завершена.")
 }
