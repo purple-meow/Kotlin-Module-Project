@@ -2,6 +2,7 @@ import java.util.Scanner
 
 class CreateArchiveScreen(private val archives: MutableMap<String, MutableList<Note>>) {
     private val scanner = Scanner(System.`in`)
+
     fun start() {
         while (true) {
             println("Введите название архива (не может быть пустым):")

@@ -14,7 +14,7 @@ class ArchiveSelectionScreen(private val archives: MutableMap<String, MutableLis
             options.removeAt(1)
         }
 
-        if (archives.isEmpty()){
+        if (archives.isNotEmpty()){
             archives.keys.forEach { archiveName ->
                 addOption(archiveName){
                     NoteSelectionScreen(archives, archiveName).start()
